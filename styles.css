@@ -125,7 +125,7 @@ html body {
     clip-path:circle(250px at center);
     transition: 0.5s;
   }
-  .card .circle:hover:before {
+  .card:hover .circle:before {
     clip-path:circle(800px at center);
     background: #399c9c;
   }
@@ -145,4 +145,20 @@ html body {
     height: 550px;
     width:auto;
     transition: 0.5s;
+  }
+  .card .about-evan {
+    position: relative;
+    width: 40%;
+    padding: 20px 20px 20px 40px;
+    pointer-events: none;
+    transition: 0.5s;
+    left: 20%;
+    opacity: 0;
+    visibility: none;
+  }
+
+  .card:hover .about-evan {
+    left: 0%;
+    visibility: visible;
+    opacity: 1;
   }
