@@ -23,18 +23,23 @@ html body {
 
 
 #container-1 h1 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 70px;
-  margin-bottom: 0px;
-  border-bottom: 2px solid white;
-  color: rgb(37, 94, 54);
+  font-family: 'Six Caps', sans-serif;
+  font-size: 7rem;
+  letter-spacing:.2em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #75c8ae;
+  text-shadow: .07em .07em 0 #222, .1em .1em 0 #b3b3b3;
+  color: #b3b3b3;
+  background:#222
 }
 #container-1 h2 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 45px;
+    font-family: monospace;
+    letter-spacing: .2rem;
+    text-shadow: .07em .07em 0 #222, .1em .1em 0 #b3b3b3;
+    font-size: 3rem;
     margin-top: 5px;
     padding-bottom: 5px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid;
     color: #b3b3b3;
 
 }
@@ -64,14 +69,13 @@ html body {
 }
 #nav {
     overflow: hidden;
-    background-color: rgb(37, 94, 54);
     display: flex;
     border-radius: 5%;
     justify-content: center;
     border-radius: 20px;
 
 }
-#nav a {
+a {
     float: center;
     display: flex;
     color: #FFF;
@@ -79,11 +83,26 @@ html body {
     padding: 14px;
     text-decoration: none;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 100;
+  }
+  #nav-home {
+    color:#75c8ae;
+  }
+  #nav-about {
+    color: #573b2a;
+  }
+  #nav-projects {
+    color:#ffecb4
+  }
+  #nav-blog {
+    color:#e5771e;
+  }
+  #nav-contact {
+    color: #f4a127;
   }
   .content {
     padding:16px;
@@ -112,6 +131,7 @@ html body {
     align-items: center;
     border-radius: 20px;
     transition: 0.5s;
+    border: 2px solid #e5771e;
   }
   .card .circle {
     position: absolute;
@@ -135,7 +155,6 @@ html body {
   }
   .card:hover .circle:before {
     clip-path:circle(800px at center);
-    background: #1DB954;
   }
   .card img {
     position: absolute;
@@ -172,7 +191,7 @@ html body {
   }
   #projects {
     display: flex;
-    width: 100%;
+    width: auto;
     border: 1px solid white;
     min-height: 100vh;
     justify-content: center;
@@ -181,8 +200,7 @@ html body {
   }
   .about-box {
     position: relative;
-    width: 800px;
-    height:500px;
+    
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -190,11 +208,12 @@ html body {
     transition: 0.5s;
     border: 2px solid white;
     margin: 50px;
+    justify-content: center;
   }
-  #about-box h3 {
-    border-bottom: 1px solid white !important;
+  .about-box h3 {
     justify-content: center;
     align-items:center;
     margin: 35%;
     margin-left: 100px;
+    text-align: center;
   }
