@@ -206,7 +206,7 @@ a {
     align-items: center;
     border-radius: 20px;
     transition: 0.5s;
-    border: 2px solid white;
+    border: 2px solid #ffecb4;
     margin: 50px;
     justify-content: center;
   }
